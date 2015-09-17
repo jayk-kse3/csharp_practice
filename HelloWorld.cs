@@ -1,10 +1,19 @@
 /* C# Hello world file */
 
-class HelloWorld
+// C# Library directive
+using System;
+
+// Project Namespace
+namespace HelloWorld
 {
-   public static void main(String args[])
+   // Only Class file required in this Project's namespace
+   class HelloWorld
    {
-      string name = "James";
-      Console.WriteLine("\nHello World " + name + "\n");
+      // Main() method - only one required in this example
+      public static void main(String args[])
+      {
+         String name = "James";
+         Console.WriteLine("\nHello World " + name + "\n");
+      }
    }
 }
