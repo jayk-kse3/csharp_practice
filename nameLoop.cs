@@ -13,13 +13,20 @@ namespace VarControl
          
          int count = 0;
          
+         Console.WriteLine("------------------------------------");
+         Console.Write("Current Team Members\n");
+         Console.WriteLine("------------------------------------");
          
-         foreach (name in names)
+         foreach (string name in names)
          {
             count += 1;
-            Console.WriteLine("No\t\t" + "name");
-         }
+            Console.Write("No.\t\t" + "Name\n");
+            Console.WriteLine(count + "\t\t" + name);
+         } // end Foreach
          
-      }
-   }
-}
+         // Output the latest Counter value following Foreach loop termination
+         Console.WriteLine("The counter is now at " + count);
+         
+      } // end Main
+   } // end Class
+} // end Namespace
